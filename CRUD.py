@@ -4,7 +4,7 @@ tipo_jogos = []
 #MENU INICIO
 while True:
 
-    print("Bem Vindo a sua bliblioteca de jogos!!!\n")
+    print("\nBem Vindo a sua bliblioteca de jogos!!!\n")
     print("Abaixo estão listadas algumas funções. Comece adicionando alguns jogos a sua bliblioteca basta digitar 1\n")
 
     print("[1] Inserir game")
@@ -23,11 +23,11 @@ while True:
     if resposta == 1:
         insira = str(input("\nO insira um game ?\n"))
         lista.append(insira)
-        insira_2 = str(input("Qual o tipo do game ?\n"))
+        insira_2 = str(input("\nQual o tipo do game ?\n"))
         tipo_jogos.append(insira_2)
         print("\nGame inserido com sucesso!!!\n")
-        print(lista)
-        print(tipo_jogos)
+        print('\nJogo :',lista)
+        print('Tipo :',tipo_jogos)
 
 #Select
     elif resposta == 2:
@@ -75,8 +75,6 @@ while True:
             lista[g_pos] = novo
             novo_tipo = str(input("Digite o novo tipo do seu jogo : "))
             tipo_jogos[g_pos] = novo_tipo
-        '''count = int(input("Selecione a posição do game que deseja alterar (ATENÇÃO : A CONTAGEM COMEÇA DO 0)\n"))
-        lista[count] = alteracao'''
         print(lista)
         print(tipo_jogos)
 
