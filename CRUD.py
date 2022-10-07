@@ -61,7 +61,7 @@ while True:
 #Alterar
     elif resposta == 3:
         print(lista)
-        antigo = str(input("\nEscreva o jogo para fazer a substituição : \n"))
+        antigo = str(input("\nEscreva um jogo da lista acima para fazer a substituição : \n"))
         if antigo in lista:
             g_pos = lista.index(antigo)
             novo = str(input("Digite o jogo que vai substituir o elemento que digitou anteriormente : "))
