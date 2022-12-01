@@ -32,6 +32,9 @@ while True:
 #Select
     elif resposta == 2:
         consultar = str(input("\nQual game quer buscar ?\n"))
+        if consultar == "":
+            print("Vc n digitou nada para fazer a pesquisa")
+            exit()
         if consultar in lista:
             print("O jogo está na lista\n")
             j_pos = lista.index(consultar)
@@ -62,6 +65,9 @@ while True:
     elif resposta == 3:
         print(lista)
         antigo = str(input("\nEscreva um jogo da lista acima para fazer a substituição : \n"))
+        if antigo == "":
+            print("Vc n digitou nada para fazer a pesquisa")
+            exit()
         if antigo in lista:
             g_pos = lista.index(antigo)
             novo = str(input("Digite o jogo que vai substituir o elemento que digitou anteriormente : "))
@@ -83,6 +89,9 @@ while True:
     elif resposta == 4:
         print(lista,'\n')
         remover = str(input("Digite o game para ser removido (NÃO ESCREVA : '\-n') : \n"))
+        if remover == "":
+            print("Vc n digitou nada para fazer a pesquisa")
+            exit()
         if remover in lista:
             r_pos = lista.index(remover)
             lista.remove(remover)
