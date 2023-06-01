@@ -87,7 +87,7 @@ def importar_biblioteca():
         return []
 
 def main():
-    biblioteca = importar_biblioteca()
+    #biblioteca = importar_biblioteca()
 
     while True:
         exibir_menu()
